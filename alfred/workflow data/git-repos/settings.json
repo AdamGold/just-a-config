@@ -5,19 +5,9 @@
 	"global_exclude_patterns": [],
 	"search_dirs": [
 		{
-			"depth": 3,
+			"depth": 4,
 			"name_for_parent": 1,
 			"path": "~/Documents/Development"
-		},
-		{
-			"depth": 3,
-			"name_for_parent": 1,
-			"path": "~/Documents/Development/Python"
-		},
-		{
-			"depth": 3,
-			"name_for_parent": 1,
-			"path": "~/Documents/Development/react"
 		}
 	]
 }
