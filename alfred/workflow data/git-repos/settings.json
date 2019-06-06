@@ -1,0 +1,23 @@
+{
+	"__workflow_last_version": "2.1.2",
+	"app_cmd": "iTerm",
+	"app_default": "Visual Studio Code",
+	"global_exclude_patterns": [],
+	"search_dirs": [
+		{
+			"depth": 3,
+			"name_for_parent": 1,
+			"path": "~/Documents/Development"
+		},
+		{
+			"depth": 3,
+			"name_for_parent": 1,
+			"path": "~/Documents/Development/Python"
+		},
+		{
+			"depth": 3,
+			"name_for_parent": 1,
+			"path": "~/Documents/Development/react"
+		}
+	]
+}
