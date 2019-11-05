@@ -3,7 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/adamgold/.oh-my-zsh"
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH"
+# old: Library/Frameworks/Python.framework/Versions/3.6
+export PATH="/Users/adamgold/.pyenv/shims:${PATH}:/bin:$PATH"
+export PYENV_SHELL=zsh
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
 # for Crystal
 
@@ -119,7 +121,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias venv="source venv/bin/activate"
-alias "ipython"="python3.6 -m IPython"
 
 gtd() {
   cd ~/documents/development
@@ -128,8 +129,20 @@ gtd() {
 
 init_venv(){
     # Creates a py3 venv in a directory called venv with the cli prompt of the cwd's dirname
-    python3.6 -m venv venv
+    python -m venv venv
     source venv/bin/activate
-    pip install ipython pylint autopep8
+    pip install --upgrade pip
 }
 
+init_python2_venv(){
+    # Creates a py3 venv in a directory called venv with the cli prompt of the cwd's dirname
+    python -m virtualenv --python=/usr/bin/python venv
+    source venv/bin/activate
+    MACOS_UNIVERSAL=no pip install pwntools
+}
+
+# Created by `userpath` on 2019-11-05 14:51:34
+export PATH="$PATH:/Users/adamgold/.local/bin"
+
+# source pyenv
+source '/usr/local/Cellar/pyenv/1.2.15/libexec/../completions/pyenv.zsh'
