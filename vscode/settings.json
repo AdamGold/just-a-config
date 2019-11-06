@@ -3,7 +3,7 @@
 	"editor.fontFamily": "Fira Code, Monaco, 'Courier New', monospace",
 	"editor.cursorBlinking": "phase",
 	"python.linting.enabled": true,
-	"python.linting.pylintPath": "/Users/adamgold/.local/pipx/venvs/pylint/bin/pylint",
+	"python.linting.pylintPath": "pylint",
 	"editor.scrollBeyondLastLine": false,
 	"monokaiPro.fileIconsMonochrome": true,
 	"git.enableSmartCommit": true,
