@@ -127,18 +127,11 @@ gtd() {
 }
 
 init_venv(){
-    # Creates a py3 venv in a directory called venv with the cli prompt of the cwd's dirname
-    python -m venv venv
-    source venv/bin/activate
-    pip install --upgrade pip
+    # init_venv PACKAGE_NAME [PYTHON_VERSION]
+    pyenv virtualenv $2 $1
+    pyenv local $1
+    pyenv activate
     pip install pylint
-}
-
-init_python2_venv(){
-    # Creates a py3 venv in a directory called venv with the cli prompt of the cwd's dirname
-    python -m virtualenv --python=/usr/bin/python venv
-    source venv/bin/activate
-    MACOS_UNIVERSAL=no pip install pwntools
 }
 
 # Created by `userpath` on 2019-11-05 14:51:34
