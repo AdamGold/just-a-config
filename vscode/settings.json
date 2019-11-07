@@ -3,7 +3,6 @@
 	"editor.fontFamily": "Fira Code, Monaco, 'Courier New', monospace",
 	"editor.cursorBlinking": "phase",
 	"python.linting.enabled": true,
-	"python.linting.pylintPath": "pylint",
 	"editor.scrollBeyondLastLine": false,
 	"monokaiPro.fileIconsMonochrome": true,
 	"git.enableSmartCommit": true,
@@ -49,8 +48,8 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"python.venvPath": "~/.pyenv",
 	"python.linting.mypyPath": "/Users/adamgold/.local/pipx/venvs/mypy/bin/mypy",
 	"python.linting.banditPath": "/Users/adamgold/.local/pipx/venvs/bandit/bin/bandit",
-	"python.formatting.blackPath": "/Users/adamgold/.local/pipx/venvs/black/bin/black"
+	"python.formatting.blackPath": "/Users/adamgold/.local/pipx/venvs/black/bin/black",
+	"python.venvPath": "/Users/adamgold/.pyenv/versions/"
 }

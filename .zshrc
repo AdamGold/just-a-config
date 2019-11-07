@@ -5,7 +5,6 @@
 export ZSH="/Users/adamgold/.oh-my-zsh"
 # old: Library/Frameworks/Python.framework/Versions/3.6
 export PATH="/Users/adamgold/.pyenv/shims:${PATH}:/bin:$PATH"
-export PYENV_SHELL=zsh
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
 # for Crystal
 
@@ -145,5 +144,10 @@ init_python2_venv(){
 # Created by `userpath` on 2019-11-05 14:51:34
 export PATH="$PATH:/Users/adamgold/.local/bin"
 
+# pyenv
 # source pyenv
 source '/usr/local/Cellar/pyenv/1.2.15/libexec/../completions/pyenv.zsh'
+export PYENV_SHELL=zsh
+export PYENV_ROOT="/Users/adamgold/.pyenv"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
