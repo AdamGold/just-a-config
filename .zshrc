@@ -131,7 +131,7 @@ init_venv(){
     pyenv virtualenv $2 $1
     pyenv local $1
     pyenv activate
-    pip install pylint
+    poetry add pylint --dev  # for VSCode linting
 }
 
 # Created by `userpath` on 2019-11-05 14:51:34

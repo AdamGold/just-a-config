@@ -6,11 +6,7 @@
 	"editor.scrollBeyondLastLine": false,
 	"monokaiPro.fileIconsMonochrome": true,
 	"git.enableSmartCommit": true,
-	"gitlens.codeLens.enabled": false,
 	"editor.renderControlCharacters": true,
-	"prettier.eslintIntegration": true,
-	"prettier.tabWidth": 4,
-	"prettier.useTabs": true,
 	"editor.formatOnPaste": true,
 	"[python]": {
 		"editor.formatOnPaste": false
@@ -23,14 +19,12 @@
 	"sync.gist": "2fee66dfecdcefaeaa81b9c952bb0f91",
 	"sync.autoUpload": true,
 	"window.zoomLevel": 0,
-	"prettier.semi": false,
 	"editor.fontLigatures": true,
 	"workbench.startupEditor": "none",
 	"editor.multiCursorModifier": "ctrlCmd",
 	"python.linting.banditEnabled": true,
 	"editor.folding": false,
 	"editor.cursorStyle": "line-thin",
-	"workbench.statusBar.feedback.visible": false,
 	"breadcrumbs.enabled": true,
 	"workbench.editor.highlightModifiedTabs": true,
 	"window.restoreWindows": "all",
@@ -46,10 +40,13 @@
 	"editor.formatOnSave": true,
 	"python.formatting.provider": "black",
 	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "prettier.prettier-vscode"
 	},
+	"prettier.configPath": "/Users/adamgold/.prettierrc",
 	"python.linting.mypyPath": "/Users/adamgold/.local/pipx/venvs/mypy/bin/mypy",
 	"python.linting.banditPath": "/Users/adamgold/.local/pipx/venvs/bandit/bin/bandit",
 	"python.formatting.blackPath": "/Users/adamgold/.local/pipx/venvs/black/bin/black",
-	"python.venvPath": "/Users/adamgold/.pyenv/versions/"
+	"python.venvPath": "/Users/adamgold/.pyenv/versions/",
+	"python.linting.flake8Path": "/Users/adamgold/.local/pipx/venvs/flake8/bin/flake8",
+	"python.pythonPath": "/Users/adamgold/.pyenv/versions/technion_catan/bin/python"
 }
