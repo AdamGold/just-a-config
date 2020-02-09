@@ -13,7 +13,7 @@ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -131,7 +131,8 @@ init_venv(){
     pyenv virtualenv $2 $1
     pyenv local $1
     pyenv activate
-    poetry add pylint --dev  # for VSCode linting
+    poetry init
+    poetry add pylint --dev # for VSCode linting
 }
 
 # Created by `userpath` on 2019-11-05 14:51:34
@@ -139,8 +140,11 @@ export PATH="$PATH:/Users/adamgold/.local/bin"
 
 # pyenv
 # source pyenv
-source '/usr/local/Cellar/pyenv/1.2.15/libexec/../completions/pyenv.zsh'
+source '/usr/local/Cellar/pyenv/1.2.16/libexec/../completions/pyenv.zsh'
 export PYENV_SHELL=zsh
 export PYENV_ROOT="/Users/adamgold/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -39,14 +39,11 @@
 	"python.linting.mypyEnabled": true,
 	"editor.formatOnSave": true,
 	"python.formatting.provider": "black",
-	"[javascript]": {
-		"editor.defaultFormatter": "prettier.prettier-vscode"
-	},
 	"prettier.configPath": "/Users/adamgold/.prettierrc",
 	"python.linting.mypyPath": "/Users/adamgold/.local/pipx/venvs/mypy/bin/mypy",
 	"python.linting.banditPath": "/Users/adamgold/.local/pipx/venvs/bandit/bin/bandit",
 	"python.formatting.blackPath": "/Users/adamgold/.local/pipx/venvs/black/bin/black",
 	"python.venvPath": "/Users/adamgold/.pyenv/versions/",
 	"python.linting.flake8Path": "/Users/adamgold/.local/pipx/venvs/flake8/bin/flake8",
-	"python.pythonPath": "/Users/adamgold/.pyenv/versions/technion_catan/bin/python"
+	"terminal.integrated.fontFamily": "MesloLGS NF"
 }
