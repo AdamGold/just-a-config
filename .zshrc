@@ -2,9 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/adamgold/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 # old: Library/Frameworks/Python.framework/Versions/3.6
-export PATH="/Users/adamgold/.pyenv/shims:${PATH}:/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:${PATH}:/bin:$PATH"
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
 # for Crystal
 
@@ -136,13 +136,13 @@ init_venv(){
 }
 
 # Created by `userpath` on 2019-11-05 14:51:34
-export PATH="$PATH:/Users/adamgold/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # pyenv
 # source pyenv
-source '/usr/local/Cellar/pyenv/1.2.16/libexec/../completions/pyenv.zsh'
+# source '/usr/local/Cellar/pyenv/1.2.16/libexec/../completions/pyenv.zsh'
 export PYENV_SHELL=zsh
-export PYENV_ROOT="/Users/adamgold/.pyenv"
+export PYENV_ROOT="/$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
